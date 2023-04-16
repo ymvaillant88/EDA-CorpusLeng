@@ -6,11 +6,11 @@ from PIL import Image
 st.set_page_config(page_title='Corpus Lenguístico',
                    layout='wide', page_icon=':✌:')
 
-path_csv = '../Ficheros/csv/df_original.csv'
+path_csv = 'data/df_original.csv'
 df = pd.read_csv(path_csv, sep='\t', encoding='utf-8',
                  nrows=1000, index_col="Unnamed: 0")
 
-path_csv1 = '../Ficheros/csv/df_colums.csv'
+path_csv1 = 'data/df_columns.csv'
 
 df1 = pd.read_csv(path_csv1, sep='\t', encoding='utf-8',
                   nrows=1000, index_col="id")
